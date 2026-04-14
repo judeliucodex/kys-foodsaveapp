@@ -144,7 +144,6 @@ struct GameView: View {
             .padding(.vertical, 8)
             .glassCard(cornerRadius: 16)
             .scaleEffect(timeRemaining <= 10 && timerRunning ? 1.1 : 1.0)
-            .animation(.easeInOut(duration: 0.5).repeatForever(autoreverses: true), value: timeRemaining <= 10 && timerRunning)
 
             Spacer()
 
